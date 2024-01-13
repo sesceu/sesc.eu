@@ -2,12 +2,14 @@ baseURL = 'https://sesc.eu/'
 languageCode = 'en-us'
 title = 'sesc.eu'
 defaultContentLanguage = "en"
-
+enableEmoji = true
 theme = "gokarna"
 
 # Automatically generate robots.txt
 enableRobotsTXT = true
 
+# The code style color
+pygmentsStyle = "solarized-dark"
 
 [menu]
   [[menu.main]]
@@ -36,8 +38,47 @@ enableRobotsTXT = true
     
   [[menu.main]]
     identifier = "github"
-    url = "https://github.com"
+    url = "https://github.com/sesceu"
     weight = 3
     
     # We use feather-icons: https://feathericons.com/
     pre = "<span data-feather='github'></span>"
+
+  [[menu.main]]
+    identifier = "rss"
+    pre = "<span data-feather='rss'></span>"
+    url = "/index.xml"
+    weight = 4
+
+[params]
+  avatarURL = "/images/sesc.png"
+  AvatarAltText = "Sebastian Schneider Clipart"
+  avatarSize = "size-m"
+  footer = "Sebastian Schneider"
+  description = "Software engineer in robotics and safety, maker, builder and a proud father of two."
+  ShowBackToTopButton = true # true or false for "back to top" button on posts
+  customHeadHTML = '''
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  '''
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false
