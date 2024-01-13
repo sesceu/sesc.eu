@@ -57,6 +57,7 @@ pygmentsStyle = "solarized-dark"
   footer = "Sebastian Schneider"
   description = "Software engineer in robotics and safety, maker, builder and a proud father of two."
   ShowBackToTopButton = true # true or false for "back to top" button on posts
+  showPostsOnHomePage = "recent"
   customHeadHTML = '''
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
@@ -75,6 +76,9 @@ pygmentsStyle = "solarized-dark"
         });
       });
     </script>
+  '''
+  customFooterHTML = '''
+    <span><a href="/page/imprint">Imprint / Impressum</a></span>
   '''
 
 [markup]
