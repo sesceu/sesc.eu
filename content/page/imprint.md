@@ -59,7 +59,7 @@ Olympiastr. 8b\
 
 ### Source
 
-Created with the [Imprint Generator](https://www.mth-partner.de/impressumgenerator/impressum-generator.php) by [Helmer Tieben, lawyer for immigration law, Cologne](https://www.mth-partner .de/leistung-rechtsanwalt-koeln/auslaenderrecht/)
+Created with the [Imprint Generator](https://www.mth-partner.de/impressumgenerator/impressum-generator.php) by [Helmer Tieben, Rechtsanwalt für Ausländerrecht, Köln](https://www.mth-partner.de/leistungen-rechtsanwalt-koeln/auslaenderrecht/)
 
 ### Disclaimer
 
