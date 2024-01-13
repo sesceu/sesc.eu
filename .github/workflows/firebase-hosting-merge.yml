@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: 'true'
       - name: Run hugo
         uses: crazy-max/ghaction-hugo@v3
         with:
