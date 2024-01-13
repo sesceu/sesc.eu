@@ -16,6 +16,8 @@ jobs:
           version: latest
           extended: false
           args: --cleanDestinationDir --minify --verbose
+      - name: List files
+        runs: find
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
