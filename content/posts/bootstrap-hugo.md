@@ -6,8 +6,8 @@ slug = ""
 tags = ["hugoio", "gitlab", "nginx", "portainer", "docker", "watchtower", "ci/cd"]
 categories = ["HowTo"]
 description = ""
-image = "/p/bootstrap-hugo/title_picture.svg"
-type = "featured"
+image = "/images/2020-01-bootstrap-hugo/bootstrap-hugo.svg"
+type = "post"
 +++
 
 Last year, I decided to start a blog. Mostly because I consume a lot of blogs, e.g. when I look for new projects or need help building them. At that time I chose [ghost](https://ghost.org/) and I liked it, but recently I decided that I'd like to switch to [Hugo](https://gohugo.io/), mainly for two reasons:
@@ -48,7 +48,7 @@ There is a nice [quick start guide](https://gohugo.io/getting-started/quick-star
 I can recommend to `.gitignore` the public folder, as I do not want to accidentally commit some intermediary version of the site. Remember, we want GitLab to build the site automatically.
 
 Running ```hugo server -D``` makes the page available at [http://localhost:1313](http://localhost:1313).
-{{< figure src="/p/bootstrap-hugo/first_glimpse_at_page.png" caption="First glimpse at the new page.">}}
+{{< figure src="/images/2020-01-bootstrap-hugo/first_glimpse_at_page.png" caption="First glimpse at the new page.">}}
 
 I am pretty happy with the results from the quick start tutorial, so I `git add` all the files and `git commit` afterwards.
 
@@ -141,7 +141,7 @@ Now before entering any of the three stages, I login to Docker Hub. This is wher
 
 Now it is time to `git add` both new files and then finally push the commits to Gitlab. After pushing, the build pipeline should automatically been triggered and, if successful, the docker image with the new blog will be available on Docker Hub.
 
-{{< figure src="/p/bootstrap-hugo/successfull_pipeline.png" caption="Successful execution of the build pipeline.">}}
+{{< figure src="/images/2020-01-bootstrap-hugo/successfull_pipeline.png" caption="Successful execution of the build pipeline.">}}
 
 ### Setting up Portainer and Watchtower
 Until now, I managed that the website is automatically built into a docker image, whenever I push any changes to the site's git repository. The resulting image is available on Docker Hub, but it is not yet deployed and thus not visible to the outside world. This is what I do now.
