@@ -1,4 +1,4 @@
-baseURL = 'https://sesc.eu/'
+baseURL = 'https://www.sesc.eu/'
 languageCode = 'en-us'
 title = 'sesc.eu'
 defaultContentLanguage = "en"
