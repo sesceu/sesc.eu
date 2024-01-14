@@ -6,7 +6,7 @@ slug = ""
 tags = ["hugoio", "gitlab", "nginx", "portainer", "docker", "watchtower", "ci/cd"]
 categories = ["HowTo"]
 description = ""
-image = "/images/2020-01-bootstrap-hugo/bootstrap-hugo.svg"
+image = "/images/2020-01-bootstrap-hugo/title_picture.svg"
 type = "post"
 +++
 
